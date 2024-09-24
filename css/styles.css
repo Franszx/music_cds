@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+header,
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+  color: lightpink;
+}
+
+h1 {
+  color: deeppink;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+form input {
+  padding: 8px;
+  color: darkmagenta;
+  border: 1px solid lightpink;
+  border-radius: 4px;
+}
+form input:focus {
+  border: 2px solid deeppink;
+  outline: none;
+}
+form button {
+  padding: 10px;
+  background-color: lightpink;
+  color: darkmagenta;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+form button:hover {
+  background-color: deeppink;
+  color: darkmagenta;
+}
+
+table {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid deeppink;
+}
+
+th,
+td {
+  padding: 12px;
+  color: deeppink;
+  text-align: left;
+}
+
+th {
+  background-color: lightpink;
+  color: darkmagenta;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: deeppink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: rgb(246, 138, 195);
+}
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
